@@ -12,15 +12,12 @@ int main() {
     cout << "Enter a Number: ";
     cin >> num;
 
-    while (num != 0) {
-        num = num / 10;
-        n = num/10;
-        if(n == 0) {
-            count++;
-        }
+    if (num == 0) {
+        num = num + 1;
+    } while (num != 0) {
+        num = num/10; // strip
         count++;
     }
-
 
     cout << "\nNumbers Counted: " << count;
 
